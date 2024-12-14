@@ -9,7 +9,6 @@
 body{
   min-height: 100vh;
 }
-/********* styles for the nav, navbar, nav-links and side-menu ********/
 nav{
   position: fixed;
   top: 0;
@@ -100,15 +99,12 @@ nav .navbar .links li a{
   margin-right: 20px;
   cursor: pointer;
 }
-
 .sidebar-logo .logo-name {
   font-size: 10px;
   font-weight: bold;
   margin: 0;
 
 }
-/********* styles for the nav, navbar, nav-links and side-menu ********/
-
 /* *******styling the main content*********** */
 .content-section{ 
   background-image: url(student\ pic.jpg);
@@ -273,8 +269,8 @@ nav .navbar .links li a{
   padding: 8px 15px;
   border: 10px;
   color: white;
-margin-left: 20px;
-margin-bottom: 20px;
+ margin-left: 20px;
+ margin-bottom: 20px;
 }
 
 .news-section .section-content .cards .card a:hover{
@@ -282,3 +278,232 @@ margin-bottom: 20px;
   transition: 0.03s;
 }
 /********** news Section styles***************/
+
+.bottom{
+  background-color: purple;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+}
+
+.bottom .links h3{
+  font-size: 30px;
+  font-family: 'Times New Roman';
+  padding: 10px;
+  color: #fff;
+}
+
+.bottom .links p{
+  font-size: 14px;
+  margin-inline: 15px;
+  color: silver;
+}
+
+.bottom .links p a{
+  text-decoration: none;
+  color: silver;
+  transition: 0.03s;
+}
+
+.bottom .links p a:hover{
+  color: rgb(251, 243, 243);
+}
+.bottom .links-1 h3{
+  font-size: 30px;
+  font-family: 'Times New Roman';
+  padding: 10px;
+  color: #fff;
+}
+
+.bottom .links-1 p{
+  font-size: 14px;
+  margin-inline: 15px;
+  color: silver;
+}
+
+.bottom .links-1 a{
+  text-decoration: none;
+   color: silver;
+   font-size: 20px;
+   padding-top: 1px;
+  padding-left: 14px;
+  margin-bottom: 10px;
+  
+}
+
+.bottom .links-1 a:hover{
+ color: rgb(251, 243, 243);
+}
+.footer{
+  background-color: purple;
+  height: 30px;
+  border-top-style: double;
+  align-items: center;
+  display: grid;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer a{
+  text-decoration: none;
+  color: silver;
+  align-content: center;
+  font-size: 13px;
+  font-family: sans-serif;
+  padding-top: 10px;
+  transition: 0.03s;
+}
+
+.footer a:hover{
+  color:rgb(251, 243, 243);
+}
+
+
+
+/* Media Queries */
+
+/* Mobile Devices (Portrait) */
+@media (max-width:768px) {
+  nav {
+    max-width: 100%;
+    padding: 0 25px;
+  }
+  nav .navbar .logo a {
+    font-size: 28px;
+  }
+  nav .navbar .nav-links{
+    background-color: white;
+  }
+  nav .navbar .links li {
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+  nav .navbar .links li a {
+    font-size: 15px;
+  }
+  .navbar .bx-menu {
+    display:block;
+  }
+  .content-section h1{
+    font-size: 28px;
+}
+
+.button a{
+    font-size: 14px;
+}
+
+.container .row{
+    flex-direction: column;
+    padding: 20px;
+}
+
+.content h1{
+    font-size: 32px;
+}
+
+.content h3{
+    font-size: 18px;
+}
+
+.content p{
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.content a{
+  text-decoration: none;
+  font-size: 17px;
+  border: 10px;
+  border-radius: 20px;
+  background-color: purple;
+  color: white;
+  letter-spacing: 1.5px;
+  padding: 10px;
+}
+
+.content a:hover{
+  color: rgba(0, 0, 0, 0.65) ;
+  transition: 0.03s;
+}
+
+.news-section .section-content .cards{
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom{
+  flex-direction: column;
+  height: auto;
+}
+
+.bottom .links, .bottom .links-1{
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer{
+  padding-top: 10px;
+} 
+}
+
+
+@media screen and (max-width:917px){
+  nav{
+    max-width: 100%;
+    padding: 0 25px;
+  }
+  .navbar {
+    padding: 0 15px;
+  }
+  .navbar .bx-menu{
+    display: block;
+    font-weight: 300;
+    color: purple;
+  }
+  nav .navbar .nav-links{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    display: block;
+    max-width: 270px;
+    width: 100%;
+    line-height: 40px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+  .navbar .nav-links .sidebar-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sidebar-logo .logo-name{
+    font-size: 25px;
+    color: #fff;
+    background-color: purple;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+    .sidebar-logo  i,
+    .navbar .bx-menu{
+      font-size: 25px;
+      color: #fff;
+      
+    }
+  nav .navbar .links{
+    display: block;
+    margin-top: 20px;
+  }
+nav .navbar .links li{
+    display: block;
+  }
+
+}
+@media (max-width:370px){
+  nav .navbar .nav-links{
+  max-width: 100%;
+} 
+}
